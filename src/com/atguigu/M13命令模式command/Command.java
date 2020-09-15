@@ -1,4 +1,4 @@
-package com.atguigu.command;
+package com.atguigu.M13命令模式command;
 
 
 //创建命令接口
@@ -8,4 +8,5 @@ public interface Command {
 	public void execute();
 	//撤销动作(操作)
 	public void undo();
+	
 }

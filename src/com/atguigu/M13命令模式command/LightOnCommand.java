@@ -1,9 +1,8 @@
-package com.atguigu.command;
+package com.atguigu.M13命令模式command;
 
 public class LightOnCommand implements Command {
 
 	//聚合LightReceiver
-	
 	LightReceiver light;
 	
 	//构造器
@@ -14,16 +13,12 @@ public class LightOnCommand implements Command {
 	
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
 		//调用接收者的方法
 		light.on();
 	}
 
-	
-
 	@Override
 	public void undo() {
-		// TODO Auto-generated method stub
 		//调用接收者的方法
 		light.off();
 	}

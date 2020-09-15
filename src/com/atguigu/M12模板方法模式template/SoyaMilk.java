@@ -1,16 +1,14 @@
-package com.atguigu.template;
+package com.atguigu.M12模板方法模式template;
 
 //抽象类，表示豆浆
 public abstract class SoyaMilk {
 
-	//模板方法, make , 模板方法可以做成final , 不让子类去覆盖.
+	// 模板方法, make , 模板方法可以做成final , 不让子类去覆盖.15
 	final void make() {
-		
 		select(); 
 		addCondiments();
 		soak();
 		beat();
-		
 	}
 	
 	//选材料
@@ -29,4 +27,5 @@ public abstract class SoyaMilk {
 	void beat() {
 		System.out.println("第四步：黄豆和配料放到豆浆机去打碎  ");
 	}
+	
 }
