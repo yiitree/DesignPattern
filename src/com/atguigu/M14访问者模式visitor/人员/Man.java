@@ -1,10 +1,11 @@
-package com.atguigu.visitor;
+package com.atguigu.M14访问者模式visitor.人员;
+
+import com.atguigu.M14访问者模式visitor.意见.Action;
 
 public class Man extends Person {
 
 	@Override
 	public void accept(Action action) {
-		// TODO Auto-generated method stub
 		action.getManResult(this);
 	}
 

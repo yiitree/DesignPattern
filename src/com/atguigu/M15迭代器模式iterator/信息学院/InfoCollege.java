@@ -1,13 +1,16 @@
-package com.atguigu.iterator;
+package com.atguigu.M15迭代器模式iterator.信息学院;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import com.atguigu.M15迭代器模式iterator.College;
+import com.atguigu.M15迭代器模式iterator.Department;
+
+// 信息工程学院
 public class InfoCollege implements College {
 
 	List<Department> departmentList;
-	
 	
 	public InfoCollege() {
 		departmentList = new ArrayList<Department>();
@@ -18,20 +21,20 @@ public class InfoCollege implements College {
 	
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
 		return "信息工程学院";
 	}
 
 	@Override
 	public void addDepartment(String name, String desc) {
-		// TODO Auto-generated method stub
 		Department department = new Department(name, desc);
 		departmentList.add(department);
 	}
 
+	/**
+	 * 返回此学院中的 系 的迭代器
+	 */
 	@Override
 	public Iterator createIterator() {
-		// TODO Auto-generated method stub
 		return new InfoColleageIterator(departmentList);
 	}
 
