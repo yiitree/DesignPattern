@@ -3,7 +3,6 @@ package com.atguigu.D01设计原则principle.C01单一原则singleresponsibility;
 public class SingleResponsibility1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Vehicle vehicle = new Vehicle();
 		vehicle.run("摩托车");
 		vehicle.run("汽车");

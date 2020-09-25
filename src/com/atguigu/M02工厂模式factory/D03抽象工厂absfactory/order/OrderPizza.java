@@ -11,16 +11,17 @@ public class OrderPizza {
 	AbsFactory factory;
 
 	// 构造器
-	public OrderPizza(AbsFactory factory) {
-		setFactory(factory);
+	public OrderPizza(AbsFactory factory,String type) {
+		setFactory(factory,type);
 	}
 
-	private void setFactory(AbsFactory factory) {
+	private void setFactory(AbsFactory factory,String type) {
 		Pizza pizza = null;
 		String orderType = ""; // 用户输入
 		this.factory = factory;
 		do {
-			orderType = getType();
+//			orderType = getType();
+			orderType = type;
 			// factory 可能是北京的工厂子类，也可能是伦敦的工厂子类
 			pizza = factory.createPizza(orderType);
 			if (pizza != null) { // 订购ok

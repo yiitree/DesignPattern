@@ -3,8 +3,6 @@ package com.atguigu.D01设计原则principle.C02接口隔离原则segregation;
 public class Segregation1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 	}
 
 }
